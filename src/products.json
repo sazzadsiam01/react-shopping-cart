@@ -1,0 +1,132 @@
+{
+    "items": [
+        {
+            "sys": {
+                "id": "1"
+            },
+            "fields": {
+                "title": "Smart Watches for Women Men",
+                "price": 10.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../assets/pic1.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "2"
+            },
+            "fields": {
+                "title": "Casio Illuminator AE1500WH Series ",
+                "price": 12.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../assets/pic2.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "3"
+            },
+            "fields": {
+                "title": "EURANS Smart Watch 41mm, Full Touchscreen Smartwatch",
+                "price": 12.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../assets/pic3.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "4"
+            },
+            "fields": {
+                "title": "Mens Watches Analog Quartz Sports Unisex Watch",
+                "price": 22.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../assets/pic4.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "5"
+            },
+            "fields": {
+                "title": "Casio Men's MQ24-7B2 Analog Watch",
+                "price": 88.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../assets/pic5.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "6"
+            },
+            "fields": {
+                "title": "OLEVS Men Watch Business Dress Diamond Luxury Watch",
+                "price": 32.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../assets/pic6.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "7"
+            },
+            "fields": {
+                "title": "MVMT Field 3H Timepieces for Men",
+                "price": 45.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../assets/pic7.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "8"
+            },
+            "fields": {
+                "title": "Men's Digital Watch, Sports Waterproof Military ",
+                "price": 33.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../assets/pic8.jpg"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

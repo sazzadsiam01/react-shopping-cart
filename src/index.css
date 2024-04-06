@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: black;
+    color: white;
+    padding: 0 16px 0 16px;
+}
+
+@media (width > 640px) {
+    body {
+        padding: 0 40px 0 40px;
+    }
+}
+
+.custom-grid-layout {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.custom-row-layout {
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+}
