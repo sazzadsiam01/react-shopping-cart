@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import useContentful from "./useContentful.jsx";
 import Cart from "./components/Cart.jsx";
 import Collections from "./components/Collections.jsx";
 import Hero from "./components/Hero.jsx";
@@ -9,29 +10,42 @@ const App = () => {
   const [dataFetchError, setDataFetchError] = useState(false);
   const [cartItems, setCartItems] = useState([]);
   const [displayCart, setDisplayCart] = useState('hidden');
+  const { getProducts } = useContentful();
+
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch('http://127.0.0.1:5500/data.json');
+  //       const data = await response.json();
+  //       const products = data.items.map(product => {
+  //         const { title, price } = product.fields;
+  //         const { id } = product.sys;
+  //         const image = product.fields.image.fields.file.url;
+
+  //         return { title, price, id, image };
+  //       })
+
+  //       setProducts(products);
+  //     } catch (err) {
+  //       setDataFetchError(true);
+  //       console.log('error is: ' + err);
+  //     }
+  //   }
+
+  //   fetchData();
+  // }, [])
+
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('http://127.0.0.1:5500/data.json');
-        const data = await response.json();
-        const products = data.items.map(product => {
-          const { title, price } = product.fields;
-          const { id } = product.sys;
-          const image = product.fields.image.fields.file.url;
-
-          return { title, price, id, image };
-        })
-
-        setProducts(products);
-      } catch (err) {
+    getProducts()
+      .then(response => setProducts(response))
+      .catch(error => {
         setDataFetchError(true);
-        console.log('error is: ' + err);
-      }
-    }
+        console.log(error);
+      })
+  }, []);
 
-    fetchData();
-  }, [])
 
   const handleDisplayCart = (display) => {
     setDisplayCart(display);

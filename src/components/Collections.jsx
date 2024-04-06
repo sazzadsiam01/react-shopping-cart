@@ -30,10 +30,10 @@ const Collections = ({ products = [], handleCart, cartItems, dataFetchError }) =
     let ourCollection;
 
     if (dataFetchError) {
-        ourCollection = <p className="text-4xl font-light">something went wrong</p>
+        ourCollection = <p className="text-4xl font-light text-center pb-7">something went wrong</p>
     } else {
         ourCollection = products.map(product => {
-            return <ProductCard handleCart={handleCart} key={product.id} id={product.id} itemPhoto={product.image} title={product.title} price={product.price} cartItems={cartItems} />;
+            return <ProductCard handleCart={handleCart} key={product.id} id={product.id} itemPhoto={product.image.file.url} title={product.title} price={product.price} cartItems={cartItems} />;
         })
     }
 
